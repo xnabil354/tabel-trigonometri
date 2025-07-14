@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Trigonometri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; 
+        }
+        .table-container {
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+    <div class="container mx-auto">
+        <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 mb-4">Spreadsheet Trigonometri Sudut Istimewa</h1>
+        <p class="text-slate-600 mb-6">Tabel nilai trigonometri untuk kuadran I, II, III, dan IV dalam format spreadsheet.</p>
+        
+        <div class="table-container bg-white rounded-lg shadow-md border border-slate-200">
+            <table class="min-w-full text-sm text-left">
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">Derajat (°)</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">Radian (rad)</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">sin α</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">cos α</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">tan α</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">csc α</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">sec α</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">cot α</th>
+                        <th scope="col" class="p-3 font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200">Kuadran</th>
+                    </tr>
+                </thead>
+                <tbody class="text-slate-600">
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">0°</td><td class="p-3">0</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3">0</td><td class="p-3 text-red-500">TT</td><td class="p-3">1</td><td class="p-3 text-red-500">TT</td><td class="p-3 font-medium">-</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">30°</td><td class="p-3">π/6</td><td class="p-3">½</td><td class="p-3">½√3</td><td class="p-3">⅓√3</td><td class="p-3">2</td><td class="p-3">⅔√3</td><td class="p-3">√3</td><td class="p-3 font-medium text-center">I</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">45°</td><td class="p-3">π/4</td><td class="p-3">½√2</td><td class="p-3">½√2</td><td class="p-3">1</td><td class="p-3">√2</td><td class="p-3">√2</td><td class="p-3">1</td><td class="p-3 font-medium text-center">I</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">60°</td><td class="p-3">π/3</td><td class="p-3">½√3</td><td class="p-3">½</td><td class="p-3">√3</td><td class="p-3">⅔√3</td><td class="p-3">2</td><td class="p-3">⅓√3</td><td class="p-3 font-medium text-center">I</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">90°</td><td class="p-3">π/2</td><td class="p-3">1</td><td class="p-3">0</td><td class="p-3 text-red-500">TT</td><td class="p-3">1</td><td class="p-3 text-red-500">TT</td><td class="p-3">0</td><td class="p-3 font-medium">-</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">120°</td><td class="p-3">2π/3</td><td class="p-3">½√3</td><td class="p-3">-½</td><td class="p-3">-√3</td><td class="p-3">⅔√3</td><td class="p-3">-2</td><td class="p-3">-⅓√3</td><td class="p-3 font-medium text-center">II</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">135°</td><td class="p-3">3π/4</td><td class="p-3">½√2</td><td class="p-3">-½√2</td><td class="p-3">-1</td><td class="p-3">√2</td><td class="p-3">-√2</td><td class="p-3">-1</td><td class="p-3 font-medium text-center">II</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">150°</td><td class="p-3">5π/6</td><td class="p-3">½</td><td class="p-3">-½√3</td><td class="p-3">-⅓√3</td><td class="p-3">2</td><td class="p-3">-⅔√3</td><td class="p-3">-√3</td><td class="p-3 font-medium text-center">II</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">180°</td><td class="p-3">π</td><td class="p-3">0</td><td class="p-3">-1</td><td class="p-3">0</td><td class="p-3 text-red-500">TT</td><td class="p-3">-1</td><td class="p-3 text-red-500">TT</td><td class="p-3 font-medium">-</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">210°</td><td class="p-3">7π/6</td><td class="p-3">-½</td><td class="p-3">-½√3</td><td class="p-3">⅓√3</td><td class="p-3">-2</td><td class="p-3">-⅔√3</td><td class="p-3">√3</td><td class="p-3 font-medium text-center">III</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">225°</td><td class="p-3">5π/4</td><td class="p-3">-½√2</td><td class="p-3">-½√2</td><td class="p-3">1</td><td class="p-3">-√2</td><td class="p-3">-√2</td><td class="p-3">1</td><td class="p-3 font-medium text-center">III</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">240°</td><td class="p-3">4π/3</td><td class="p-3">-½√3</td><td class="p-3">-½</td><td class="p-3">√3</td><td class="p-3">-⅔√3</td><td class="p-3">-2</td><td class="p-3">⅓√3</td><td class="p-3 font-medium text-center">III</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">270°</td><td class="p-3">3π/2</td><td class="p-3">-1</td><td class="p-3">0</td><td class="p-3 text-red-500">TT</td><td class="p-3">-1</td><td class="p-3 text-red-500">TT</td><td class="p-3">0</td><td class="p-3 font-medium">-</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">300°</td><td class="p-3">5π/3</td><td class="p-3">-½√3</td><td class="p-3">½</td><td class="p-3">-√3</td><td class="p-3">-⅔√3</td><td class="p-3">2</td><td class="p-3">-⅓√3</td><td class="p-3 font-medium text-center">IV</td></tr>
+                    <tr class="bg-white border-b border-slate-200"><td class="p-3 font-bold">315°</td><td class="p-3">7π/4</td><td class="p-3">-½√2</td><td class="p-3">½√2</td><td class="p-3">-1</td><td class="p-3">-√2</td><td class="p-3">√2</td><td class="p-3">-1</td><td class="p-3 font-medium text-center">IV</td></tr>
+                    <tr class="bg-slate-50 border-b border-slate-200"><td class="p-3 font-bold">330°</td><td class="p-3">11π/6</td><td class="p-3">-½</td><td class="p-3">½√3</td><td class="p-3">-⅓√3</td><td class="p-3">-2</td><td class="p-3">⅔√3</td><td class="p-3">-√3</td><td class="p-3 font-medium text-center">IV</td></tr>
+                    <tr class="bg-white"><td class="p-3 font-bold">360°</td><td class="p-3">2π</td><td class="p-3">0</td><td class="p-3">1</td><td class="p-3">0</td><td class="p-3 text-red-500">TT</td><td class="p-3">1</td><td class="p-3 text-red-500">TT</td><td class="p-3 font-medium">-</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
